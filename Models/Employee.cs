@@ -31,6 +31,8 @@ namespace ERPNetCore.Models
         public virtual ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistory { get; set; }
         public virtual ICollection<GrantPermission> GrantPermission { get; set; }
         public virtual ICollection<JobCandidate> JobCandidate { get; set; }
+
+        //public virtual Person Person { get; set; }
         public virtual Person BusinessEntity { get; set; }
     }
 }

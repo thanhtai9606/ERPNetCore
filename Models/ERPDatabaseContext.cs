@@ -36,12 +36,13 @@ namespace ERPNetCore.Models
         public virtual DbSet<TimerType> TimerType { get; set; }
         public virtual DbSet<Ward> Ward { get; set; }
 
+       
         // Unable to generate entity type for table 'FireSystem.BusinessEntityTimer'. Please see the warning messages.
         // Unable to generate entity type for table 'FireSystem.FireInfomation'. Please see the warning messages.
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+            
             optionsBuilder.UseSqlServer(@"Server=127.0.0.1;Database=ERPDatabase; User Id=sa;Password=DungMy@#96;");
         }
 

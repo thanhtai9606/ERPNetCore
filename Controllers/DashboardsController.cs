@@ -33,6 +33,13 @@ namespace ERPNetCore.Controllers
         {
             return View();
         }
-       
+         public ActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Login2()
+        {
+            return View();
+        }
     }
 }
