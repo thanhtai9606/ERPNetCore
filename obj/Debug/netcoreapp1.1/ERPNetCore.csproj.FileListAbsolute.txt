@@ -1,0 +1,8 @@
+/home/dunglt/Programming/CSharp/ERPNetCore/bin/Debug/netcoreapp1.1/ERPNetCore.deps.json
+/home/dunglt/Programming/CSharp/ERPNetCore/bin/Debug/netcoreapp1.1/ERPNetCore.runtimeconfig.json
+/home/dunglt/Programming/CSharp/ERPNetCore/bin/Debug/netcoreapp1.1/ERPNetCore.runtimeconfig.dev.json
+/home/dunglt/Programming/CSharp/ERPNetCore/bin/Debug/netcoreapp1.1/ERPNetCore.dll
+/home/dunglt/Programming/CSharp/ERPNetCore/bin/Debug/netcoreapp1.1/ERPNetCore.pdb
+/home/dunglt/Programming/CSharp/ERPNetCore/obj/Debug/netcoreapp1.1/ERPNetCore.AssemblyInfo.cs
+/home/dunglt/Programming/CSharp/ERPNetCore/obj/Debug/netcoreapp1.1/ERPNetCore.dll
+/home/dunglt/Programming/CSharp/ERPNetCore/obj/Debug/netcoreapp1.1/ERPNetCore.pdb
