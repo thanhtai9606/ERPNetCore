@@ -16,6 +16,7 @@ namespace ERPNetCore
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:4300")
                 .Build();
 
             host.Run();

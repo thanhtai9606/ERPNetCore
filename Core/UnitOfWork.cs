@@ -3,24 +3,31 @@ using ERPNetCore.Core.RepositoryPattern;
 using System;
 using ERPNetCore.Models;
 using ERPNetCore.Core.RepositoryPattern.Multimedia;
+using ERPNetCore.Core.RepositoryPattern.BusinessEntities;
+using ERPNetCore.Core.RepositoryPattern.Globalization;
+using ERPNetCore.Core.RepositoryPattern.GrantPermissionAdmin;
+using ERPNetCore.Core.RepositoryPattern.HR;
 
 namespace ERPNetCore.Core
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private ERPDatabaseContext _context;
-        public CatalogRepository  CatalogRepository { set; get;}
-        public CategoryRepository CategoryRepository { set; get;}
-        public ItemRepository ItemRepository { set; get;}
-
+        public MultimediaRepository MultimediaRepository { set; get; }
+        public BusinessEntityRepository BusinessEntityRepository { set; get; }
+        public CultureRepository CultureRepository { set; get; }
+        public GrantPermissionAdmin GrantPermissionAdmin { set; get; }
+        public HRRepository HRRepository { set; get; }
         public UnitOfWork(ERPDatabaseContext context)
         {
-           this._context = context;
-            CatalogRepository = new CatalogRepository(context);
-            CategoryRepository = new CategoryRepository(context);
-            ItemRepository = new ItemRepository(context);
+            this._context = context;
+            MultimediaRepository = new MultimediaRepository(context);
+            BusinessEntityRepository = new BusinessEntityRepository(context);
+            CultureRepository = new CultureRepository(context);
+            GrantPermissionAdmin = new GrantPermissionAdmin(context);
+            HRRepository = new HRRepository(context);
         }
-         public int Complete()
+        public int Complete()
         {
             return _context.SaveChanges();
         }
